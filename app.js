@@ -7,9 +7,14 @@ const port = 3000;
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/css'))
+app.use('/images', express.static('images'))
+app.use(express.static((__dirname, 'js')))
+
+
 
 app.get('/', (req, res,) => {
     res.render("index")
+    res.render('index.js')
 })
 
 // NOT IMPORTANT (just users routes)
