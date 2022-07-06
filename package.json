@@ -2,7 +2,7 @@
   "name": "code",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
     "watch": "node-sass --watch css/style.scss public/css/style.css",
     "build": "nodemon --exec babel-node app.js ",
